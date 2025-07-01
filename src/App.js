@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react'; // Removed useEffect as it was unused
 
 // Main App Component
 function App() {
@@ -473,7 +473,7 @@ function App() {
               Playlists
             </button>
             <button
-              onClick={() => setCurrentPage('posts')} // Link to Blog Posts
+              onClick={() => window.open('https://www.youtube.com/@365charlesparis/community', '_blank')} // Link to Posts (Community tab)
               className="py-3 px-4 text-gray-400 hover:text-white border-b-2 border-transparent hover:border-gray-600 transition-colors"
             >
               Posts
@@ -662,7 +662,7 @@ function App() {
                 </svg>
               </div>
               <p className="text-gray-400 text-sm">@365CharlesParis</p>
-              <p className="mt-2 text-gray-300">EST. 1980 ❗📣 <a href="#" className="text-blue-400 hover:underline">@the365brand</a></p>
+              <p className="mt-2 text-gray-300"><span className="text-blue-400">@the365brand</span></p> {/* Changed a tag to span */}
               <div className="mt-2 flex space-x-4 text-gray-300">
                 <a href="mailto:365otg@gmail.com" className="font-bold text-blue-400 hover:underline">365otg@gmail.com</a>
                 <p><span className="font-bold text-white">{totalFollowers.toFixed(1)}K</span> Total Followers</p>
@@ -762,3 +762,5 @@ function App() {
 }
 
 export default App;
+
+
