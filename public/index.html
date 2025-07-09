@@ -1,36 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 Charles Paris - Official Portfolio & Cultural Architect</title>
+    <meta name="description" content="Official portfolio and resume of Charles Paris (O.T.G) - a leading Black American Music Producer, Audio Engineer, Composer, Music Manager, A&R, and Independent Record Label Owner. Specializing in strategic brand partnerships, music consultation, and viral campaign development. Expert in Akai MPC One, Roland SP-404 MK2, Ableton Live, Reason Studios, Native Instruments Maschine. Offers advanced masterclasses, production tutorials, and drives impactful cultural movements across Philadelphia, East Coast, and America. The cultural architect influencing influencers, defining what's 'lit' and 'hot' in the music industry.">
+    <meta name="keywords" content="Charles Paris, O.T.G, music management, music production, consultation, brand partnerships, Akai MPC One, Roland SP-404 MK2, Ableton Live, Reason Studios, Native Instruments Maschine, tutorials, masterclasses, influencers, Philadelphia, East Coast, America, producer, composer, manager, independent record label, viral campaigns, TV placements, Grammy member, cultural architect, audio engineering, beatmaking, sound design, music business, artist development, strategic partnerships, media platforms, mixing, mastering, audio routing, workflow optimization, music industry leader, cultural authority, thought leader, Rayban Meta, Teenage Engineering OP-1 Field, Rodecaster Pro, Shure SM7B, Yamaha Seqtrak, Polyend Tracker Mini, Roland Verselab MV-1, Roland TR-6S, Boss RC-202, Sonicware SMPLTREK">
+    <meta name="author" content="Charles Paris">
 
-    <!-- ADD THESE TWO LINES HERE -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <!------------------------------>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://365otg.github.io/365-charles-paris-app/">
+    <meta property="og:title" content="365 Charles Paris - Official Portfolio & Cultural Architect">
+    <meta property="og:description" content="Official portfolio and resume of Charles Paris (O.T.G) - a leading Black American Music Producer, Audio Engineer, Composer, Music Manager, A&R, and Independent Record Label Owner. Specializing in strategic brand partnerships, music consultation, and viral campaign development.">
+    <meta property="og:image" content="https://365otg.github.io/365-charles-paris-app/images/profile-pic.png">
 
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://365otg.github.io/365-charles-paris-app/">
+    <meta property="twitter:title" content="365 Charles Paris - Official Portfolio & Cultural Architect">
+    <meta property="twitter:description" content="Official portfolio and resume of Charles Paris (O.T.G) - a leading Black American Music Producer, Audio Engineer, Composer, Music Manager, A&R, and Independent Record Label Owner. Specializing in strategic brand partnerships, music consultation, and viral campaign development.">
+    <meta property="twitter:image" content="https://365otg.github.io/365-charles-paris-app/images/profile-pic.png">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Charles Paris",
+      "alternateName": ["Brother O.T.G", "365OTG", "Over Time Grind", "Supply the work"],
+      "url": "https://365otg.github.io/365-charles-paris-app/",
+      "sameAs": [
+        "https://facebook.com/365charlesparis",
+        "https://instagram.com/365charlesparis",
+        "https://twitter.com/365charlesparis",
+        "http://youtube.com/@365charlesparis",
+        "https://linktr.ee/365charlesparis",
+        // Add all relevant social media and professional links here
+        // Example: "https://www.linkedin.com/in/yourprofile",
+        // Example: "https://soundcloud.com/yourprofile"
+      ],
+      "jobTitle": ["Music Producer", "Audio Engineer", "Composer", "Music Manager", "A&R", "Independent Record Label Owner", "Marketer"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Over Time Grind Productions, LLC"
+      },
+      "description": "Leading Black American Music Producer, Audio Engineer, Composer, Music Manager, A&R, and Independent Record Label Owner. Specializing in strategic brand partnerships, music consultation, and viral campaign development. Expert in Akai MPC One, Roland SP-404 MK2, Ableton Live, Reason Studios, Native Instruments Maschine. Offers advanced masterclasses, production tutorials, and drives impactful cultural movements across Philadelphia, East Coast, and America. The cultural architect influencing influencers, defining what's 'lit' and 'hot' in the music industry."
+    }
+    </script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="profile-header">
+            <div class="profile-info">
+                <img src="images/profile-pic.png" alt="Charles Paris Profile Picture" class="profile-pic">
+                <div class="profile-name-handle">
+                    <h1>365 Charles Paris</h1>
+                    <span class="handle">@365CharlesParis</span>
+                    <img src="images/verified-badge.png" alt="Verified" class="verified-badge">
+                </div>
+            </div>
+            <div class="profile-actions">
+                <a href="https://linktr.ee/365charlesparis" target="_blank" class="follow-button">Follow</a>
+                <button id="contactButton" class="contact-button">Contact</button>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Philadelphia, PA</span>
+            </div>
+            <div class="about-me">
+                <p>Producer, Engineer, Marketer, Owner of Over Time Grind Productions, LLC (Supplythework, Rich Rising, 365OTG, O.T.G Safe Spaces) #OverTimeGrind #StayDownUntilYouComeUp</p>
+            </div>
+        </header>
+
+        <nav class="tabs-nav">
+            <button class="tab-button active" data-tab="overview">Overview</button>
+            <button class="tab-button" data-tab="music">Music</button>
+            <button class="tab-button" data-tab="videos">Videos</button>
+            <button class="tab-button" data-tab="store">Store</button>
+            <button class="tab-button" data-tab="streaming">Streaming</button>
+        </nav>
+
+        <main class="tab-content-container">
+            <section id="overview" class="tab-pane active">
+                <div class="social-media-stats">
+                    <div class="social-icon-row">
+                        <a href="https://facebook.com/365charlesparis" target="_blank"><img src="images/social-icons/facebook.png" alt="Facebook"></a>
+                        <a href="https://instagram.com/365charlesparis" target="_blank"><img src="images/social-icons/instagram.png" alt="Instagram"></a>
+                        <img src="images/social-icons/tiktok.png" alt="TikTok"> <a href="https://twitter.com/365charlesparis" target="_blank"><img src="images/social-icons/twitter.png" alt="Twitter"></a>
+                        <a href="http://youtube.com/@365charlesparis" target="_blank"><img src="images/social-icons/youtube.png" alt="YouTube"></a>
+                    </div>
+                    <div class="follower-counts">
+                        <p>Facebook: 10.4k</p>
+                        <p>Instagram: 24.7K</p>
+                        <p>TikTok: 1k</p>
+                        <p>Twitter: 72.7k</p>
+                        <p>YouTube: 14.4k</p>
+                    </div>
+                    <div class="total-followers">
+                        <p>Total Followers: <span id="totalFollowersCount"></span></p>
+                    </div>
+                    <p class="impressions">Over 8 Million Impressions monthly.</p>
+                </div>
+            </section>
+
+            <section id="music" class="tab-pane">
+                <h2>Charles Paris Music</h2>
+                <div class="youtube-carousel">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PL_YOUR_PLAYLIST_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PL_YOUR_PLAYLIST_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+            </section>
+
+            <section id="videos" class="tab-pane">
+                <div class="videos-header">
+                    <img src="images/profile-pic.png" alt="Charles Paris Profile Picture" class="video-profile-pic">
+                    <div class="video-profile-info">
+                        <span class="video-handle">@365CharlesParis</span>
+                        <img src="images/verified-badge.png" alt="Verified" class="verified-badge-small">
+                        <a href="http://youtube.com/@365charlesparis" target="_blank" class="subscribe-button">Subscribe</a>
+                        <p class="video-about-me">Teaching Producers how to Utilize, Build and grow their sound.</p>
+                    </div>
+                </div>
+                <div class="main-videos">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3?controls=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_4?controls=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_5?controls=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_6?controls=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_7?controls=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_8?controls=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_9?controls=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_10?controls=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div id="map-container">
+                    <h3>Drop a Pin on Your Location!</h3>
+                    <div id="map"></div>
+                    <form id="locationForm">
+                        <input type="text" id="locationInput" placeholder="Enter your location (e.g., City, State)">
+                        <button type="submit">Drop Pin</button>
+                    </form>
+                    <p style="font-size: 0.8em; color: #aaa; margin-top: 10px;">Note: Map functionality requires a Google Maps API key and may incur usage costs.</p>
+                </div>
+            </section>
+
+            <section id="store" class="tab-pane">
+                <h2>Over Time Grind Store</h2>
+                <div class="gumroad-products">
+                    <a class="gumroad-button" href="https://gumroad.com/l/YOUR_GUMROAD_PRODUCT_ID_1" data-options='{"singleProduct":true,"displayType":"overlay"}'>Buy My Product 1</a>
+                    <a class="gumroad-button" href="https://gumroad.com/l/YOUR_GUMROAD_PRODUCT_ID_2" data-options='{"singleProduct":true,"displayType":"overlay"}'>Buy My Product 2</a>
+                    </div>
+            </section>
+
+            <section id="streaming" class="tab-pane">
+                <h2>Listen to Charles Paris Music</h2>
+                <div class="streaming-links">
+                    <a href="YOUR_SPOTIFY_LINK" target="_blank"><img src="images/streaming-logos/spotify.png" alt="Spotify"><span>Spotify</span></a>
+                    <a href="YOUR_APPLE_MUSIC_LINK" target="_blank"><img src="images/streaming-logos/applemusic.png" alt="Apple Music"><span>Apple Music</span></a>
+                    <a href="YOUR_TIDAL_LINK" target="_blank"><img src="images/streaming-logos/tidal.png" alt="Tidal"><span>Tidal</span></a>
+                    <a href="YOUR_SOUNDCLOUD_LINK" target="_blank"><img src="images/streaming-logos/soundcloud.png" alt="SoundCloud"><span>SoundCloud</span></a>
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2>Get in Touch!</h2>
+            <form id="emailForm" action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST">
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+                <button type="submit">Send Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+</body>
 </html>
